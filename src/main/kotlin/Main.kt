@@ -11,6 +11,7 @@ class Main {
                 connector
             }
             tomcat.start()
+
             tomcat.server.await()
         }
     }

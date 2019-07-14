@@ -16,5 +16,6 @@ class MyAppInitializer: WebApplicationInitializer {
             .also {
                 it.addMapping("/")
             }
+        servletContext.addListener(MyListener::class.java)
     }
 }
